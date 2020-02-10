@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    background-color: tomato;
+    color: #000;
+    text-transform: uppercase;
+}
+.box{
+    font-size: 30px;
+    display: flex;
+    transition: all .3s;
+}
