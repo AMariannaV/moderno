@@ -73,13 +73,13 @@
     color: #fff;
     text-align: center;
     &-title{
-        font-weight: 700;
+        @include f700;
         font-size: 48px;
         margin-bottom: 10px;
         line-height: 72px;
     }
     &-text{
-        font-weight: 500;
+        @include f500;
         font-size: 20px;
         margin-bottom: 55px;
         line-height: 30px;
@@ -95,7 +95,7 @@
             box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
             border-radius: 4px;
             border: none;
-            font-weight: 500;
+            @include f500;
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder{
@@ -160,7 +160,7 @@
         padding: 10px 30px;
         min-height: 90px;
         align-items: center;
-        font-weight: 500;
+        @include f500;
         border-bottom: 1px solid #e7ecf2;
     }
     &-name{
@@ -179,7 +179,7 @@
     }
     &-price{
         color: $bg;
-        font-weight: 700;
+        @include f700;
         font-size: 20px;
     }
     &-info{
@@ -205,7 +205,7 @@
         }
         span{
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
         }
         
     }
@@ -265,9 +265,51 @@
     }
     
 }
-
+// end-slider
   
-  
+// start-advantages
+.advantages{
+    background-color: $bg;
+    padding: 110px 0 110px;
+    &__title{
+        color: #fff;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+        text-align: center;
+        @include f500;
+        color: #fff;
+        padding: 0 15px;
+        &:hover{
+            .advantages__item-images{
+                background-color: $green;
+            }
+            .advantages__item-title{
+                color: $green;
+            }
+        }
+        &-images{
+            width: 114px;
+            height: 114px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            transition: all .5s;
+        }
+        &-title{
+            font-size: 24px;
+            margin-bottom: 25px;
+            transition: all .5s;
+        }
+        &-text{
+            font-size: 15px;
+        }
+    }
+}
 
   
   
